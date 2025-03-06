@@ -571,6 +571,7 @@ body {
 
 #sign-in-form h2, #sign-un-form h2 {
     margin-bottom: 20px;
+    font-size: 32px;
 }
 
 #sign-in-form button, #sign-un-form button {
@@ -1254,6 +1255,9 @@ footer a:hover {
     #form-details form {
         width: 50%;
     }
+    #sign-in-form, #sign-un-form {
+        flex-direction: row;
+    }
 }
 
 @media (max-width:477px) {
@@ -1447,6 +1451,11 @@ footer a:hover {
 
 .cart-quantity #decrement, #increment {
     background-color: rgba(133, 130, 130, 0.2);
+    transition: 0.3s;
+}
+
+.cart-quantity #decrement:hover, #increment:hover {
+    scale: 1.1;
 }
 
 #decrement {
@@ -1465,6 +1474,11 @@ footer a:hover {
 .cart-remove {
     font-size: 25px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-remove:hover {
+    scale: 1.2;
 }
 
 .total {
@@ -1498,6 +1512,11 @@ footer a:hover {
     cursor: pointer;
     width: 50%;
     height: 50px;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    scale: 1.1;
 }
 
 #cart-close {
@@ -1513,5 +1532,10 @@ footer a:hover {
     justify-items: center;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+}
+
+#cart-close:hover {
+    scale: 1.1;
 }
 

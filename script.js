@@ -184,7 +184,8 @@ const updateTotalPrice = () => {
 
 buyNow.addEventListener("click", () =>  {
     alert("Cảm ơn bạn đã mua hàng")
-    document.querySelector(".cart-content").innerHTML = ""; 
+    document.querySelector(".cart-content").innerHTML = "";
+    cart.classList.remove("active2");
     updateTotalPrice();
 }
 );
