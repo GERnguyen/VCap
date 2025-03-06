@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VCap | Sản phẩm</title>
+    <title>VCap | Thương hiệu mũ thời trang</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="icon" href="../img/logoV.png" sizes="15x15">
+    <link rel="icon" href="img/logoV.png" sizes="15x15">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
     <section id="header">
-        <a href="#"><img src="../img/logo.png" class="logo" onclick="window.location.href='index.html'" alt=""></a>
+        <a href="#"><img src="../img/logo.png" class="logo" onclick="window.location.href='../index.html'" alt=""></a>
 
         <div>
             <ul id="navbar">
@@ -22,58 +30,54 @@
                 <li><a class="active" href="../shop.html">Sản phẩm</a></li>
                 <li><a href="../about.html">Thông tin</a></li>
                 <li><a href="../contact.html">Liên hệ</a></li>
-                <li id="lg-bag"><a href="../cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="../sign-in.html">Đăng nhập / Đăng ký</a></li>
+                <li id="lg-bag"><i class="far fa-shopping-bag"></i></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="../cart.html"><i class="far fa-shopping-bag"></i></a>
+            <div id="lg-bag-mb"><i class="far fa-shopping-bag"></i></div>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
+    
+    <div class="cart-aside">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0đ</div>
+        </div>
+        <div class="btn-finish">
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+    </div>
+
+
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="../img/products/cap1.png" width="100%" id="MainImg" alt="">
-
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="../img/products/cap1.png" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="../img/products/cap1-behind.avif" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col"></div>
-                <div class="small-img-col"></div>
-            </div>
+            <img class="detail-img" src="../img/products/cap2.png" width="100%" id="MainImg" alt="">
         </div>
 
         <div class="single-pro-details">
             <h6>Sản phẩm / Mũ lưỡi trai</h6>
-            <h4>Mũ lưỡi trai thời trang</h4>
-            <h2>650.000₫</h2>
-            <select>
-              <option>Chọn Size</option>
-              <option>XL</option>
-              <option>L</option>
-              <option>M</option>
-              <option>S</option>
-          </select>
-            <input type="number" value="1">
-            <button class="normal">Thêm vào giỏ hàng</button>
-            <h4>Thông tin sản phẩm</h4>
-            <span></span>
+            <h4 class="product-title">Adidas Temple</h4>
+            <h2 class="price">550.000₫</h2>
+            <button class="normal add-cart" id="addtocart">Thêm vào giỏ hàng</button>
         </div>
     </section>
 
     <section id="product1" class="section-p1">
         <h2>Sản phẩm nổi bật </h2>
         <div class="pro-container">
-            <div class="pro">
-                <img src="../img/products/cap2.png" alt="">
+            <div class="pro product-box" onclick="window.location.href='product-1.html';">
+                <img src="../img/products/cap1.png" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Mũ lưỡi trai thời trang</h5>
+                    <h5 class="product-title">Adidas SP</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -81,15 +85,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">650.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" onclick="window.location.href='product-3.html';">
                 <img src="../img/products/cap3.png" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Mũ lưỡi trai thời trang</h5>
+                    <h5 class="product-title">Adidas TrioLeafs</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -97,15 +101,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">320.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" onclick="window.location.href='product-4.html';">
                 <img src="../img/products/cap4.png" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Mũ lưỡi trai thời trang</h5>
+                    <h5 class="product-title">Adidas Mercedes</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -113,15 +117,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">990.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" onclick="window.location.href='product-5.html';">
                 <img src="../img/products/cap5.png" alt="">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Mũ lưỡi trai thời trang</h5>
+                    <h5 class="product-title">Adidas Biker</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -129,9 +133,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">1.200.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
 
         </div>
@@ -166,8 +170,7 @@
 
         <div class="col">
             <h4>Tài Khoản</h4>
-            <a href="../login.html">Đăng Nhập</a>
-            <a href="../cart.html">Xem Giỏ Hàng</a>
+            <a href="../sign-in.html">Đăng Nhập</a>
             <a href="#">Trợ Giúp</a>
         </div>
 
@@ -182,25 +185,6 @@
             <p>© 2024, VCap - Website Thương Mại Điện Tử</p>
         </div>
     </footer>
-
-    <script>
-        var MainImg = document.getElementById("MainImg");
-        var smallimg = document.getElementsByClassName("small-img");
-
-        smallimg[0].onclick = function() {
-            MainImg.src = smallimg[0].src;
-        }
-        smallimg[1].onclick = function() {
-            MainImg.src = smallimg[1].src;
-        }
-        smallimg[2].onclick = function() {
-            MainImg.src = smallimg[2].src;
-        }
-        smallimg[3].onclick = function() {
-            MainImg.src = smallimg[3].src;
-        }
-    </script>
-
 
     <script src="../script.js"></script>
 </body>

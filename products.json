@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "brand": "Adidas",
+        "name": "Adidas SP",
+        "price": 650000,
+        "image": "img/products/cap1.png"
+    },
+    {
+        "id": 2,
+        "brand": "Adidas",
+        "name": "Adidas Temple",
+        "price": 550000,
+        "image": "img/products/cap2.png"
+    },
+    {
+        "id": 3,
+        "brand": "Adidas",
+        "name": "Adidas TrioLeafs",
+        "price": 320000,
+        "image": "img/products/cap3.png"
+    },
+    {
+        "id": 4,
+        "brand": "Adidas",
+        "name": "Adidas Mercedes",
+        "price": 990000,
+        "image": "img/products/cap4.png"
+    },
+    {
+        "id": 5,
+        "brand": "Adidas",
+        "name": "Adidas Biker",
+        "price": 1200000,
+        "image": "img/products/cap5.png"
+    },
+    {
+        "id": 6,
+        "brand": "Nike",
+        "name": "Nike SP 1",
+        "price": 650000,
+        "image": "img/products/cap6.png"
+    },
+    {
+        "id": 7,
+        "brand": "Nike",
+        "name": "Nike SP 2",
+        "price": 350000,
+        "image": "img/products/cap7.png"
+    },
+    {
+        "id": 8,
+        "brand": "Nike",
+        "name": "Nike Jordan",
+        "price": 500000,
+        "image": "img/products/cap8.png"
+    },
+    {
+        "id": 9,
+        "brand": "Adidas",
+        "name": "Adidas Pickleball 1",
+        "price": 400000,
+        "image": "img/products/cap9.png"
+    },
+    {
+        "id": 10,
+        "brand": "Adidas",
+        "name": "Adidas Tennis",
+        "price": 380000,
+        "image": "img/products/cap10.png"
+    },
+    {
+        "id": 11,
+        "brand": "Adidas",
+        "name": "Adidas Pickleball 2",
+        "price": 410000,
+        "image": "img/products/cap11.png"
+    },
+    {
+        "id": 12,
+        "brand": "Adidas",
+        "name": "Adidas Summer",
+        "price": 320000,
+        "image": "img/products/cap12.png"
+    },
+    {
+        "id": 13,
+        "brand": "Adidas",
+        "name": "Adidas TrioStrike",
+        "price": 550000,
+        "image": "img/products/cap13.png"
+    },
+    {
+        "id": 14,
+        "brand": "Adidas",
+        "name": "Adidas PureWhite",
+        "price": 300000,
+        "image": "img/products/cap14.png"
+    },
+    {
+        "id": 15,
+        "brand": "Adidas",
+        "name": "Adidas HopShop",
+        "price": 880000,
+        "image": "img/products/cap15.png"
+    },
+    {
+        "id": 16,
+        "brand": "Adidas",
+        "name": "Adidas Peace",
+        "price": 1300000,
+        "image": "img/products/cap16.png"
+    }
+]

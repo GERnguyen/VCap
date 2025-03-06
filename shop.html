@@ -12,6 +12,9 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoV.png" sizes="15x15">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 </head>
 
 <body>
@@ -24,15 +27,30 @@
                 <li><a class="active" href="shop.html">Sản phẩm</a></li>
                 <li><a href="about.html">Thông tin</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="sign-in.html">Đăng nhập / Đăng ký</a></li>
+                <li id="lg-bag"><i class="far fa-shopping-bag"></i></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <div id="lg-bag-mb"><i class="far fa-shopping-bag"></i></div>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
+
+    <div class="cart-aside">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <div class="btn-finish">
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+    </div>
 
     <section id="page-header">
 
@@ -43,12 +61,14 @@
     </section>
 
     <section id="product1" class="section-p1">
+        <h2>Sản phẩm nổi bật</h2>
+        <p>Bộ sưu tập mới nhất</p>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='detail-product/product-1.html';">
+            <div class="pro product-box" id="1" onclick="window.location.href='detail-product/product-1.html';">
                 <img src="img/products/cap1.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas SP</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -56,15 +76,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">650.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="2" onclick="window.location.href='detail-product/product-2.html';">
                 <img src="img/products/cap2.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Temple</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -72,15 +92,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">550.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="3" onclick="window.location.href='detail-product/product-3.html';">
                 <img src="img/products/cap3.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas TrioLeafs</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -88,15 +108,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">320.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="4" onclick="window.location.href='detail-product/product-4.html';">
                 <img src="img/products/cap4.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Mercedes</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -104,15 +124,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">990.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="5" onclick="window.location.href='detail-product/product-5.html';">
                 <img src="img/products/cap5.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Biker</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -120,15 +140,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">1.200.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="6" onclick="window.location.href='detail-product/product-6.html';">
                 <img src="img/products/cap6.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Nike</span>
+                    <h5 class="product-title">Nike SP 1</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -136,15 +156,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">650.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="7" onclick="window.location.href='detail-product/product-7.html';">
                 <img src="img/products/cap7.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Nike</span>
+                    <h5 class="product-title">Nike SP 2</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -152,15 +172,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">350.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="8" onclick="window.location.href='detail-product/product-8.html';">
                 <img src="img/products/cap8.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Nike</span>
+                    <h5 class="product-title">Nike Jordan</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -168,16 +188,22 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">500.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
+        </div>
+    </section>
 
-            <div class="pro">
+    <section id="product1" class="section-p1">
+        <h2>Sản Phẩm Mới</h2>
+        <p>Bộ Sưu Tập Mùa Hè Với Thiết Kế Hiện Đại</p>
+        <div class="pro-container">
+            <div class="pro product-box" id="9" onclick="window.location.href='detail-product/product-9.html';">
                 <img src="img/products/cap9.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Pickleball 1</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -185,15 +211,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">400.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="10" onclick="window.location.href='detail-product/product-10.html';">
                 <img src="img/products/cap10.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Tennis</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -201,15 +227,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">380.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="11" onclick="window.location.href='detail-product/product-11.html';">
                 <img src="img/products/cap11.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Pickleball 2</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -217,15 +243,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">410.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="12" onclick="window.location.href='detail-product/product-12.html';">
                 <img src="img/products/cap12.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Summer</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -233,15 +259,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">320.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="13" onclick="window.location.href='detail-product/product-13.html';">
                 <img src="img/products/cap13.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Trio Strikes</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -249,15 +275,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">550.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="14" onclick="window.location.href='detail-product/product-14.html';">
                 <img src="img/products/cap14.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Pure White</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -265,15 +291,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">300.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="15" onclick="window.location.href='detail-product/product-15.html';">
                 <img src="img/products/cap15.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Hop Sop</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -281,15 +307,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">880.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
-            <div class="pro">
+            <div class="pro product-box" id="16" onclick="window.location.href='detail-product/product-16.html';">
                 <img src="img/products/cap16.png" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Mũ Lưỡi Trai Thời Trang</h5>
+                    <span>Adidas</span>
+                    <h5 class="product-title">Adidas Peace</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -297,9 +323,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>650.000₫</h4>
+                    <h4 class="price">1.300.000₫</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
             </div>
         </div>
     </section>
@@ -333,8 +359,7 @@
 
         <div class="col">
             <h4>Tài Khoản</h4>
-            <a href="#">Đăng Nhập</a>
-            <a href="cart.html">Xem Giỏ Hàng</a>
+            <a href="sign-in.html">Đăng Nhập</a>
             <a href="#">Trợ Giúp</a>
         </div>
 

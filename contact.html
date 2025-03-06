@@ -12,6 +12,9 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoV.png" sizes="15x15">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 </head>
 
 <body>
@@ -24,15 +27,28 @@
                 <li><a href="shop.html">Sản phẩm</a></li>
                 <li><a href="about.html">Thông tin</a></li>
                 <li><a class="active" href="contact.html">Liên hệ</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="sign-in.html">Đăng nhập / Đăng ký</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
+
+    <div class="cart-aside">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <div class="btn-finish">
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+    </div>
 
     <section id="page-header" class="about-header">
 
@@ -87,8 +103,12 @@
 
         <div class="people">
             <div>
-                <img src="img/people/1.png" alt="">
-                <p><span>Nguyễn Vĩ </span> Sinh viên<br> SĐT: + 000 123 000 77 88 <br> Email: ngyenvi@gmail.com</p>
+                <img src="img/people/vi.png" alt="">
+                <p><span>Nguyễn Thế Vĩ </span> Co-founder<br> SĐT: 0918390105 <br> Email: nvi150105@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/people/anh.png" alt="">
+                <p><span>Nguyễn Phan Kim Anh </span> Co-founder<br> SĐT:0379673552 <br> Email: kimanh220105@gmail.com</p>
             </div>
         </div>
     </section>
@@ -122,8 +142,7 @@
 
         <div class="col">
             <h4>Tài Khoản</h4>
-            <a href="#">Đăng Nhập</a>
-            <a href="cart.html">Xem Giỏ Hàng</a>
+            <a href="sign-in.html">Đăng Nhập</a>
             <a href="#">Trợ Giúp</a>
         </div>
 

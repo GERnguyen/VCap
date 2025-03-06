@@ -12,6 +12,9 @@
     </style>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoV.png" sizes="15x15">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 </head>
 
 <body>
@@ -24,12 +27,11 @@
                 <li><a href="shop.html">Sản phẩm</a></li>
                 <li><a class="active" href="about.html">Thông tin</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i><span id="cart-count">0</span></a></li>
+                <li><a href="sign-in.html">Đăng nhập / Đăng ký</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i><span id="cart-count-mb">0</span></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -42,17 +44,33 @@
 
     </section>
 
+    <div class="cart-aside">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <div class="btn-finish">
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+    </div>
+
     <section id="about-head" class="section-p1">
         <img src="img/about/a6.jpg" alt="">
         <div>
             <h2>Chúng tôi là ai?</h2>
-            <p></p>
-
-            <abbr title="">Lorem ipsum dolor sit amet, consectetur</abbr>
-
+            <p>Chúng tôi là hai bạn trẻ đầy nhiệt huyết, 
+                cùng chung đam mê về thời trang và phong cách cá nhân. Với mong muốn mang đến những chiếc mũ chất lượng, 
+                hợp xu hướng với giá cả hợp lý, chúng tôi đã thành lập trang web này như một điểm đến cho những ai yêu thích sự cá tính và khác biệt. 
+                Tại đây, bạn có thể tìm thấy nhiều mẫu mũ đa dạng, từ thể thao năng động đến phong cách đường phố sành điệu. Chúng tôi không chỉ bán mũ, 
+                mà còn mong muốn tạo nên một cộng đồng yêu thời trang, nơi mỗi chiếc mũ đều kể một câu chuyện riêng. 🚀</p>
+            <abbr title=""></abbr>
             <br><br>
 
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</marquee>
+            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Nhiệt huyết, đam mê, sáng tạo, khác biệt</marquee>
         </div>
     </section>
 
@@ -113,8 +131,7 @@
 
         <div class="col">
             <h4>Tài Khoản</h4>
-            <a href="#">Đăng Nhập</a>
-            <a href="cart.html">Xem Giỏ Hàng</a>
+            <a href="sign-in.html">Đăng Nhập</a>
             <a href="#">Trợ Giúp</a>
         </div>
 

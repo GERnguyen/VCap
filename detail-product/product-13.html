@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCap | Thương hiệu mũ thời trang</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" href="img/logoV.png" sizes="15x15">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="../img/logo.png" class="logo" onclick="window.location.href='../index.html'" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a class="active" href="../shop.html">Sản phẩm</a></li>
+                <li><a href="../about.html">Thông tin</a></li>
+                <li><a href="../contact.html">Liên hệ</a></li>
+                <li><a href="../sign-in.html">Đăng nhập / Đăng ký</a></li>
+                <li id="lg-bag"><i class="far fa-shopping-bag"></i></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="lg-bag-mb" class="far fa-shopping-bag"></i>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    
+    <div class="cart-aside">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0đ</div>
+        </div>
+        <div class="btn-finish">
+            <button class="btn-buy">Buy Now</button>
+            <i class="ri-close-line" id="cart-close"></i>
+        </div>
+    </div>
+
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img class="detail-img" src="../img/products/cap13.png" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Sản phẩm / Mũ lưỡi trai</h6>
+            <h4 class="product-title">Nike SP 5</h4>
+            <h2 class="price">750.000₫</h2>
+            <button class="normal add-cart" id="addtocart">Thêm vào giỏ hàng</button>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Sản phẩm nổi bật </h2>
+        <div class="pro-container">
+            <div class="pro product-box" onclick="window.location.href='product-2.html';">
+                <img src="../img/products/cap2.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5 class="product-title">Adidas Temple</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">550.000₫</h4>
+                </div>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
+            </div>
+            <div class="pro product-box" onclick="window.location.href='product-3.html';">
+                <img src="../img/products/cap3.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5 class="product-title">Adidas TrioLeafs</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">320.000₫</h4>
+                </div>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
+            </div>
+            <div class="pro product-box" onclick="window.location.href='product-4.html';">
+                <img src="../img/products/cap4.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5 class="product-title">Adidas Mercedes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">990.000₫</h4>
+                </div>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
+            </div>
+            <div class="pro product-box" onclick="window.location.href='product-5.html';">
+                <img src="../img/products/cap5.png" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5 class="product-title">Adidas Biker</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">1.200.000₫</h4>
+                </div>
+                <i onclick="event.stopPropagation()" class="fal fa-shopping-cart cart add-cart"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../img/logo.png" alt="">
+            <h4>Liên Hệ</h4>
+            <p><strong>Địa chỉ: </strong> 123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+            <p><strong>Điện thoại:</strong> 0123.456.789</p>
+            <p><strong>Giờ làm việc:</strong> 10:00 - 18:00, Thứ Hai - Thứ Bảy</p>
+            <div class="follow">
+                <h4>Theo Dõi Chúng Tôi</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Thông Tin</h4>
+            <a href="../about.html">Về Chúng Tôi</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+            <a href="#">Điều Khoản & Điều Kiện</a>
+            <a href="../contact.html">Liên Hệ</a>
+        </div>
+
+        <div class="col">
+            <h4>Tài Khoản</h4>
+            <a href="../sign-in.html">Đăng Nhập</a>
+            <a href="#">Trợ Giúp</a>
+        </div>
+
+        <div class="col install">
+            <p>Cài Đặt Ứng Dụng</p>
+            <h5>Available soon..</h5>
+            <p>Cổng Thanh Toán</p>
+            <img src="../img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, VCap - Website Thương Mại Điện Tử</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
